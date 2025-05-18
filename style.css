@@ -1,183 +1,200 @@
-h1{
-
-
-font-family: Verdana, Geneva, Tahoma, sans-serif;
-text-align: center;
-font-size: 4rem;
-color: rgb(182, 221, 255);
-text-decoration: line-through;
-
+/* General Styles */
+h1 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    font-size: 3rem;
+    color: rgb(182, 221, 255);
+    text-decoration: line-through;
 }
 
-h6{
-
+h6 {
     color: white;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 20px;
+    font-size: 1.5rem;
     text-align: center;
-
 }
 
-
-ul li{
-
+ul li {
     display: flex;
     justify-content: center;
-    
-    margin: 2px;
+    margin: 1px;
     border-radius: 20px;
-    padding-left: 2px;
+    padding: 1px;
     transition: 0.4s;
-    }
-    
-ul li a:hover{
-
-margin: 30px;
-padding: 30px;
-background-color: lightskyblue;
-transition: 0.8s;
-color: white;
-font-size: 1.5rem;
-
 }
 
-ul li a{
-
-transition: 0.9s;
-color: rgb(88, 27, 27);
-border-radius: 20px;
-text-decoration: none;
-padding: 2px;
-padding-left: 140px;
-padding-right: 140px;
-
+ul li a:hover {
+    margin: 10px;
+    padding: 10px;
+    background-color: lightskyblue;
+    transition: 0.8s;
+    color: white;
+    font-size: 1rem;
 }
 
-
-
-
-
-body{
-
-
-backdrop-filter: blur(80px);
-background-color: #000000;
-
+ul li a {
+    transition: 0.9s;
+    color: rgb(88, 27, 27);
+    border-radius: 20px;
+    text-decoration: none;
+    padding: 1px;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
+body {
+    backdrop-filter: blur(80px);
+    background-color: #000000;
+}
 
-  .contenedor {
+.contenedor {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 20px;
-  }
-  
-  .music-card {
+    gap: 10px;
+}
+
+.music-card {
     background: #1e1e1e;
     color: #fff;
     border-radius: 20px;
     box-shadow: 0 4px 15px rgba(0,0,0,0.6);
-    width: 320px;
+    width: 90%;
+    max-width: 320px;
     overflow: hidden;
     text-align: center;
     transition: transform 0.3s;
-    padding: 20px;
-    margin: 20px;
+    padding: 10px;
+    margin: 10px;
     transition: 0.2s;
-  }
-  
-  .music-card:hover {
-    transform: scale(1.13);
-    padding: 25px;
-  }
-  
-  .music-card img {
+}
+
+.music-card:hover {
+    transform: scale(1.05);
+    padding: 15px;
+}
+
+.music-card img {
     width: 100%;
     display: block;
     border-radius: 20px;
-  }
-  
-  .music-info {
-    padding: 15px;
-  }
-  
-  .music-info h2 {
-    margin: 10px 0 5px;
-    font-size: 1.2em;
-  }
-  
-  .music-info p {
-    margin: 0;
-    font-size: 0.9em;
-    color: #ccc;
-  }
-  
-
-  audio {
-  width: 100%;
-  max-width: 400px; /* Para limitar su tamaño en pantallas grandes */
-  margin: 10px auto;
-  display: block;
 }
 
+.music-info {
+    padding: 10px;
+}
 
+.music-info h2 {
+    margin: 5px 0 2.5px;
+    font-size: 1rem;
+}
 
+.music-info p {
+    margin: 0;
+    font-size: 0.8em;
+    color: #ccc;
+}
 
-
-
-
-
-
-
-
-
-
-  
-  
-  .buscador-contenedor {
+audio {
     width: 100%;
-    max-width: 500px;
-    padding: 20px;
-  }
-  
-  .search-form {
+    max-width: 400px;
+    margin: 10px auto;
+    display: block;
+}
+
+.buscador-contenedor {
+    width: 100%;
+    max-width: 400px;
+    padding: 10px;
+}
+
+.search-form {
     display: flex;
     background-color: #252525;
     border-radius: 50px;
     overflow: hidden;
     box-shadow: 0 4px 15px rgba(0,0,0,0.4);
     transition: box-shadow 0.3s;
-  }
-  
-  .search-form:hover {
+}
+
+.search-form:hover {
     box-shadow: 0 6px 20px rgba(5, 6, 54, 0.4);
-  }
-  
-  .search-form input[type="search"] {
+}
+
+.search-form input[type="search"] {
     flex: 1;
-    padding: 14px 20px;
+    padding: 10px 15px;
     border: none;
     outline: none;
     background-color: transparent;
     color: #fff;
-    font-size: 1em;
-  }
-  
-  .search-form input::placeholder {
+    font-size: 0.9em;
+}
+
+.search-form input::placeholder {
     color: #aaa;
-  }
-  
-  .search-form button {
+}
+
+.search-form button {
     background-color: #68e8ff;
     border: none;
-    padding: 14px 20px;
+    padding: 10px 15px;
     color: white;
-    font-size: 1em;
+    font-size: 0.9em;
     cursor: pointer;
     transition: background-color 0.3s;
-  }
-  
-  .search-form button:hover {
+}
+
+.search-form button:hover {
     background-color: #011631;
-  }
+}
+
+/* Media Queries */
+@media (max-width: 600px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    h6 {
+        font-size: 1.2rem;
+    }
+
+    ul li a {
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+
+    .music-card {
+        width: 100%;
+    }
+
+    .music-info h2 {
+        font-size: 0.9rem;
+    }
+
+    .music-info p {
+        font-size: 0.7em;
+    }
+}
+
+@media (min-width: 601px) and (max-width: 1024px) {
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    h6 {
+        font-size: 1.3rem;
+    }
+
+    .music-card {
+        width: 45%;
+    }
+
+    .music-info h2 {
+        font-size: 1rem;
+    }
+
+    .music-info p {
+        font-size: 0.8em;
+    }
+}
